@@ -1,0 +1,220 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CCHS:MPR121 U2
+U 1 1 5F840BA0
+P 5600 3350
+F 0 "U2" H 5600 4115 50  0000 C CNN
+F 1 "MPR121" H 5600 4024 50  0000 C CNN
+F 2 "Housings_DFN_QFN:SiliconLabs_QFN-20-1EP_3x3mm_Pitch0.5mm" H 5500 2850 50  0001 C CNN
+F 3 "" H 5500 2850 50  0001 C CNN
+	1    5600 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CCHS:SAO U1
+U 1 1 5F8415A9
+P 2550 3350
+F 0 "U1" H 2550 3715 50  0000 C CNN
+F 1 "SAO" H 2550 3624 50  0000 C CNN
+F 2 "CCHS:SAO_Header_6-Pin" H 2550 3150 50  0001 C CNN
+F 3 "" H 2550 3150 50  0001 C CNN
+	1    2550 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3250 2000 3250
+$Comp
+L power:GND #PWR0101
+U 1 1 5F844599
+P 2000 4050
+F 0 "#PWR0101" H 2000 3800 50  0001 C CNN
+F 1 "GND" H 2005 3877 50  0000 C CNN
+F 2 "" H 2000 4050 50  0001 C CNN
+F 3 "" H 2000 4050 50  0001 C CNN
+	1    2000 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3150 3900 3150
+Wire Wire Line
+	3900 3150 3900 3450
+Wire Wire Line
+	2000 3250 2000 4050
+Wire Wire Line
+	5100 3250 4000 3250
+Wire Wire Line
+	4000 3250 4000 3650
+Wire Wire Line
+	2100 3650 2100 3350
+Wire Wire Line
+	2100 3350 2200 3350
+Wire Wire Line
+	4100 2950 4100 3450
+$Comp
+L power:GND #PWR0102
+U 1 1 5F846111
+P 4100 4050
+F 0 "#PWR0102" H 4100 3800 50  0001 C CNN
+F 1 "GND" H 4105 3877 50  0000 C CNN
+F 2 "" H 4100 4050 50  0001 C CNN
+F 3 "" H 4100 4050 50  0001 C CNN
+	1    4100 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2650 5100 2850
+$Comp
+L Device:C C1
+U 1 1 5F846AE4
+P 4600 2800
+F 0 "C1" H 4715 2846 50  0000 L CNN
+F 1 "0.1uF" H 4715 2755 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4638 2650 50  0001 C CNN
+F 3 "~" H 4600 2800 50  0001 C CNN
+	1    4600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5F84A0C4
+P 4350 3650
+F 0 "C2" H 4465 3696 50  0000 L CNN
+F 1 "0.1uF" H 4465 3605 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4388 3500 50  0001 C CNN
+F 3 "~" H 4350 3650 50  0001 C CNN
+	1    4350 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3050 4350 3050
+Wire Wire Line
+	4350 3050 4350 3500
+$Comp
+L power:GND #PWR0103
+U 1 1 5F84ADE1
+P 4350 4050
+F 0 "#PWR0103" H 4350 3800 50  0001 C CNN
+F 1 "GND" H 4355 3877 50  0000 C CNN
+F 2 "" H 4350 4050 50  0001 C CNN
+F 3 "" H 4350 4050 50  0001 C CNN
+	1    4350 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3800 4350 4050
+Wire Wire Line
+	5100 3450 4100 3450
+Connection ~ 4100 3450
+Wire Wire Line
+	4100 3450 4100 4050
+$Comp
+L power:GND #PWR0104
+U 1 1 5F84BAE5
+P 4800 4050
+F 0 "#PWR0104" H 4800 3800 50  0001 C CNN
+F 1 "GND" H 4805 3877 50  0000 C CNN
+F 2 "" H 4800 4050 50  0001 C CNN
+F 3 "" H 4800 4050 50  0001 C CNN
+	1    4800 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3550 4800 3550
+Wire Wire Line
+	4800 3550 4800 4050
+Wire Wire Line
+	5100 3350 3650 3350
+Wire Wire Line
+	4000 3650 3400 3650
+Wire Wire Line
+	2900 3250 2900 2650
+$Comp
+L Device:R R1
+U 1 1 5F853B52
+P 3150 3000
+F 0 "R1" H 3220 3046 50  0000 L CNN
+F 1 "R" H 3220 2955 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3080 3000 50  0001 C CNN
+F 3 "~" H 3150 3000 50  0001 C CNN
+	1    3150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F853D5F
+P 3400 3000
+F 0 "R2" H 3470 3046 50  0000 L CNN
+F 1 "R" H 3470 2955 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3330 3000 50  0001 C CNN
+F 3 "~" H 3400 3000 50  0001 C CNN
+	1    3400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5F853F89
+P 3650 3000
+F 0 "R3" H 3720 3046 50  0000 L CNN
+F 1 "R" H 3720 2955 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3580 3000 50  0001 C CNN
+F 3 "~" H 3650 3000 50  0001 C CNN
+	1    3650 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2850 3150 2650
+Wire Wire Line
+	3150 3150 3150 3450
+Wire Wire Line
+	3400 2850 3400 2650
+Wire Wire Line
+	3400 3150 3400 3650
+Wire Wire Line
+	3650 2850 3650 2650
+Wire Wire Line
+	3650 3150 3650 3350
+Connection ~ 3150 2650
+Connection ~ 3150 3450
+Wire Wire Line
+	3150 3450 3900 3450
+Connection ~ 3400 2650
+Connection ~ 3400 3650
+Connection ~ 3650 2650
+Connection ~ 3650 3350
+Wire Wire Line
+	2900 2650 3150 2650
+Wire Wire Line
+	3150 2650 3400 2650
+Wire Wire Line
+	3400 2650 3650 2650
+Wire Wire Line
+	2900 3350 3650 3350
+Wire Wire Line
+	2900 3450 3150 3450
+Wire Wire Line
+	2100 3650 3400 3650
+Connection ~ 4600 2650
+Wire Wire Line
+	4600 2650 5100 2650
+Connection ~ 4600 2950
+Wire Wire Line
+	4600 2950 5100 2950
+Wire Wire Line
+	3650 2650 4600 2650
+Wire Wire Line
+	4100 2950 4600 2950
+$EndSCHEMATC
